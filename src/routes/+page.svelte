@@ -1,5 +1,9 @@
-<script>
+<script lang=ts>
 	import { RangeSlider } from '@skeletonlabs/skeleton';
+	import { invoke } from "@tauri-apps/api/tauri";
+
+	let password: string = "";
+	
 	let value = 15;
 	let max = 25;
 
@@ -8,8 +12,8 @@
 	let nmbrcase = false;
 	let spclcase = false;
 
-	function dothing() {
-		console.log("Button be functional");
+	async function howdy() {
+		password = await invoke ("greet");
 	}
 </script>
 
@@ -31,14 +35,15 @@
 					name="password"
 					placeholder="Your New Password"
 					aria-label="Generated Password"
-					class="w-full h-32 text-center border-dashed bordr-slate border-2 rounded-md"
+					class="w-full h-32 text-center border-dashed bordr-slate border-2 rounded-md text-black font-semibold font-mono"
+					value={password}
 			  	></textarea>
 			</section>
 
 			<hr>
 
 			<div class="w-full flex justify-center">
-				<button type="button" class="btn variant-filled-primary rounded-xl min-w-[25%] my-5" on:click={dothing} disabled={!lwrcase && !uprcase && !nmbrcase && !spclcase}>
+				<button type="button" class="btn variant-filled-primary rounded-xl min-w-[25%] my-5" on:click={howdy} disabled={!lwrcase && !uprcase && !nmbrcase && !spclcase}>
 					<span class="font-semibold">Generate</span>
 				</button>
 			</div>

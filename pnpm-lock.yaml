@@ -8,6 +8,9 @@ dependencies:
   '@floating-ui/dom':
     specifier: 1.5.3
     version: 1.5.3
+  '@tauri-apps/api':
+    specifier: ^1.5.2
+    version: 1.5.2
 
 devDependencies:
   '@playwright/test':
@@ -569,6 +572,11 @@ packages:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.3.6
     dev: true
+
+  /@tauri-apps/api@1.5.2:
+    resolution: {integrity: sha512-tZK3XJiIUnUdHN7rGqA+j57dvT3/7z2bEiPfWmO3uAymv2JMBJrfGwbyDWLjGue37UVhh0gLYSkA9wV+/bASwA==}
+    engines: {node: '>= 14.6.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
+    dev: false
 
   /@tauri-apps/cli-darwin-arm64@1.5.8:
     resolution: {integrity: sha512-/AksDWfAt3NUSt8Rq2a3gTLASChKzldPVUjmJhcbtsuzFg2nx5g+hhOHxfBYzss2Te1K5mzlu+73LAMy1Sb9Gw==}
