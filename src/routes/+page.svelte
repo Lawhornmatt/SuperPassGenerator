@@ -12,9 +12,15 @@
 	let nmbrcase = false;
 	let spclcase = false;
 
-	async function howdy() {
-		password = await invoke ("greet");
-	}
+	async function genPass() {
+		password = await invoke ("genPass", { 
+			value: value,
+			lwrcase: lwrcase, 
+			uprcase: uprcase, 
+			nmbrcase: nmbrcase, 
+			spclcase: spclcase 
+		});
+	};
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
@@ -43,7 +49,7 @@
 			<hr>
 
 			<div class="w-full flex justify-center">
-				<button type="button" class="btn variant-filled-primary rounded-xl min-w-[25%] my-5" on:click={howdy} disabled={!lwrcase && !uprcase && !nmbrcase && !spclcase}>
+				<button type="button" class="btn variant-filled-primary rounded-xl min-w-[25%] my-5" on:click={genPass} disabled={!lwrcase && !uprcase && !nmbrcase && !spclcase}>
 					<span class="font-semibold">Generate</span>
 				</button>
 			</div>
