@@ -18,7 +18,9 @@
 
 ## DESCRIPTION:
 
-This is a simple project to keep me learning and practicing. In the beginning of my fullstack bootcamp I made a simple password generator out of HTML, CSS, and plain vanilla Javascript. And it was a fantastic exercise! I felt the right amount of challenge at the time. So at this stage of learning Rust, I wanted to attempt the same challenge. I chose Tauri so I could practice some SvelteKit on the frontend, some basic Rust on the backend, and build my first desktop app at the same time.
+This is a simple project to keep me learning and practicing. In the beginning of my fullstack bootcamp I made a simple password generator out of HTML, CSS, and plain vanilla Javascript. And it was a fantastic exercise! I felt the right amount of challenge at the time. So at this stage of learning [Rust](https://www.rust-lang.org/), I wanted to attempt the same challenge.     
+
+I chose [Tauri](https://tauri.app/) so I could keep using [SvelteKit](https://kit.svelte.dev/) on the frontend, practice some very basic Rust on the backend, and build my first desktop app at the same time. I also utilized [Skeleton](https://www.skeleton.dev/), a UI toolkit for SvelteKit and [Tailwind](https://tailwindcss.com/), to keep the frontend development simple.
 
 <img src='./assets/screenshot.png' alt='A screenshot of SuprPassGen'/>
 
