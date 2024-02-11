@@ -1,7 +1,12 @@
 # SuprPassGen
+  ![image](https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=Tauri&logoColor=white)
+  ![image](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+  ![image](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white)
+
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## TABLE OF CONTENTS:
+<details>
+<summary>Table of Contents</summary>
 
 * [Description](#description)
 
@@ -14,7 +19,7 @@
 * [Credits](#credit)
 
 * [License](#license)
-
+</details>
 
 ## DESCRIPTION:
 
