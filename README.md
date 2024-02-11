@@ -33,7 +33,11 @@ I am happy to say the developer experience was really great! I look forward to t
 
 ## INSTALLATION:
 
-Download the binary and install the app
+The source code is open source and right above. Anybody is free to clone the repo, install the dependencies, and build it.
+
+I could use GitHub to host my latest builds... but lets be real, I'm never going to need to update this.   
+
+So I will just have the installers available to download from my [my website](https://lawhornmatt.com/)-- once I finish reworking it. I'll update this section when that is available
 
 ## USAGE:
 
