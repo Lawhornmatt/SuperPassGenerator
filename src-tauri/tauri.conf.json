@@ -27,7 +27,7 @@
         "icons/SPGLock_128.png",
         "icons/SPGLock.ico"
       ],
-      "identifier": "suprpassgen/com.lawhornmatt",
+      "identifier": "com.lawhornmatt.suprpassgen",
       "longDescription": "I chose Tauri so I could practice some SvelteKit on the frontend, some basic Rust on the backend, and build my first desktop app at the same time.",
       "macOS": {
         "entitlements": null,
