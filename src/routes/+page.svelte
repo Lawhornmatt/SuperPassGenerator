@@ -13,7 +13,7 @@
 	let spclcase = false;
 
 	async function genPass() {
-		password = await invoke ("genPass", { 
+		password = await invoke ("gen_pass", { 
 			value: value,
 			lwrcase: lwrcase, 
 			uprcase: uprcase, 

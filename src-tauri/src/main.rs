@@ -1,11 +1,10 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use std::{io, cmp::Ordering, char::from_digit};
 use rand::Rng;
 
 #[tauri::command]
-fn genPass(
+fn gen_pass(
   value: u8,
   lwrcase:bool,
   uprcase:bool,
@@ -62,7 +61,7 @@ fn genPass(
 
 fn main() {
   tauri::Builder::default()
-    .invoke_handler(tauri::generate_handler![genPass])
+    .invoke_handler(tauri::generate_handler![gen_pass])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }
