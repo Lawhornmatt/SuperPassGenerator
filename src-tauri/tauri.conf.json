@@ -23,14 +23,12 @@
       },
       "externalBin": [],
       "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
+        "icons/SPGLock_32.png",
+        "icons/SPGLock_128.png",
+        "icons/SPGLock.ico"
       ],
-      "identifier": "com.tauri.dev",
-      "longDescription": "",
+      "identifier": "suprpassgen/com.lawhornmatt",
+      "longDescription": "I chose Tauri so I could practice some SvelteKit on the frontend, some basic Rust on the backend, and build my first desktop app at the same time.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -39,7 +37,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "",
+      "shortDescription": "Pick which chars to use, slide to desired length, and generate a random password",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -56,10 +54,12 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "width": 800,
+        "height": 850,
+        "minWidth": 450,
+        "minHeight": 100,
         "resizable": true,
-        "title": "Supr Password Generator",
-        "width": 800
+        "title": "Supr Password Generator"
       }
     ]
   }
