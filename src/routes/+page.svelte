@@ -7,13 +7,13 @@
 	let value = 15;
 	let max = 25;
 
-	let lwrcase = false;
+	let lwrcase = true;
 	let uprcase = false;
 	let nmbrcase = false;
 	let spclcase = false;
 
 	async function genPass() {
-		password = await invoke ("gen_pass", { 
+		password = await invoke ("gen_pass", {
 			value: value,
 			lwrcase: lwrcase, 
 			uprcase: uprcase, 
@@ -23,17 +23,20 @@
 	};
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1 my-10 font-mono">💽 Password Generator! 🔒</h1>
+<div class="h-screen flex flex-col items-center lg:space-y-4 xl:space-y-8">
 
-		<div class="card p-4">
+	<h1 class="h1 my-5 lg:my-10 font-mono">💽 Password Generator! 🔒</h1>
+
+	<div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-5/6 lg:w-full md:h-auto">
+
+		<div class="card p-4 w-full h-full mb-5 lg:m-3">
+
 			<header class="text-2xl card-header font-semibold my-2">
 				Generate a Password
 			</header>
 
 			<hr>
-			
+
 			<section class="p-4 flex justify-center">
 				<textarea
 					readonly
@@ -55,43 +58,34 @@
 			</div>
 		</div>
 
-		<div class="card p-4">
+		<div class="card p-4 w-full h-full mb-5 lg:m-3">
 			<header class="text-2xl card-header font-semibold my-2">
 				Options
 			</header>
-
 			<hr>
-			
 			<RangeSlider name="range-slider" bind:value={value} max={max} step={1} ticked>
 				<div class="flex justify-between items-center mt-4 mb-2">
 					<div class="font-semibold">Password Character Length:</div>
 					<div class="text-xs">{value} / {max}</div>
 				</div>
 			</RangeSlider>
-
 			<p class="mt-4 mb-2 font-semibold">Choose atleast one character type:</p>
-
 			<label class="mb-3">
 				<input type="checkbox" bind:checked={lwrcase} />
 				Use Lowercase Characters
 			</label>
-
 			<label class="my-3">
 				<input type="checkbox" bind:checked={uprcase} />
 				Use Uppercase Characters
 			</label>
-
 			<label class="my-3">
 				<input type="checkbox" bind:checked={nmbrcase} />
 				Use Numbers
 			</label>
-
 			<label class="my-3">
 				<input type="checkbox" bind:checked={spclcase} />
 				Use Special Characters
 			</label>
 		</div>
-
-
 	</div>
 </div>
