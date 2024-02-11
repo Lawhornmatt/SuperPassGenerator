@@ -18,11 +18,11 @@
 
 ## DESCRIPTION:
 
-This is the ReadMe for Matty Lawhorn's project titled: SuprPassGen
+This is a simple project to keep me learning and practicing. In the beginning of my fullstack bootcamp I made a simple password generator out of HTML, CSS, and plain vanilla Javascript. And it was a fantastic exercise! I felt the right amount of challenge at the time. So at this stage of learning Rust, I wanted to attempt the same challenge. I chose Tauri so I could practice some SvelteKit on the frontend, some basic Rust on the backend, and build my first desktop app at the same time.
 
-This is a simple project to keep me learning Svelte for frontend and Rust for backend. In the beginning of my fullstack bootcamp I made a simple password generator out of HTML, CSS, and plain vanilla Javascript. And it was a fantastic excersize; at that level of experience I felt the right amount of challenge and ease. So at this stage of learning Rust, I wanted to attempt the same challenge. Edit this later to mention it uses Tauri to tie it all together.
+<img src='./assets/screenshot.png' alt='A screenshot of SuprPassGen'/>
 
-<img src='INSERT PATH TO SCREENSHOT HERE' alt='A screenshot of SuprPassGen'/>
+I am happy to say the developer experience was really great! I look forward to trying more difficult projects using these tools in the future.
 
 ## INSTALLATION:
 
@@ -30,7 +30,7 @@ Download the binary and install the app
 
 ## USAGE:
 
-Choose atleast one character option (passwords can be built from lowercase, uppercase, numbers, special characters, or any combination there of) and a password length via slider and hit the generate password button.
+Choose at least one character option (passwords can be built from lowercase, uppercase, numbers, special characters, or any combination thereof) and a password length via slider and hit the generate password button.
 
 ## QUESTIONS:
 
